@@ -44,7 +44,12 @@ This is a **learning project**. The user is an AI engineer learning Vue 3. Claud
 - If the user asks to do something that skips ahead, note which steps are being skipped
 - Periodically summarize progress: "We've completed Phase 1 (5/5 steps). Starting Phase 2..."
 
-### 7. Suggest Git Commits at Logical Points
+### 7. User Runs the Dev Server
+- The user will run `npm run dev` and verify changes in the browser
+- Do not start or manage the dev server — just write the code
+- When verification is needed, say: "You can check this in the browser now"
+
+### 8. Suggest Git Commits at Logical Points
 - **Suggest a commit** after completing each implementation step or small group of related steps
 - Good commit points:
   - After completing a full step (e.g., "Step 1.3: Create Todo Store")

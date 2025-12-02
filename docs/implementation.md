@@ -7,9 +7,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ## Phase 1: Foundation & Pinia Store
 
 ### Step 1.1: Clean Up Scaffold
-- [ ] Remove default Vue welcome components (HelloWorld, TheWelcome, icons)
-- [ ] Create a minimal App.vue with placeholder content
-- [ ] Verify the app runs with `npm run dev`
+- [x] Remove default Vue welcome components (HelloWorld, TheWelcome, icons)
+- [x] Create a minimal App.vue with placeholder content
+- [x] Verify the app runs with `npm run dev`
 
 **Concepts:** Single File Components (SFC)
 **Docs:** https://vuejs.org/guide/scaling-up/sfc.html
