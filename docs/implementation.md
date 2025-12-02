@@ -27,10 +27,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 1.3: Create Todo Store with Pinia
-- [ ] Create `src/stores/todo.js` with Pinia `defineStore()`
-- [ ] Add `todos` array as state
-- [ ] Add `addTodo` action
-- [ ] Add `deleteTodo` action
+- [x] Create `src/stores/todo.js` with Pinia `defineStore()`
+- [x] Add `todos` array as state
+- [x] Add `addTodo` action
+- [x] Add `deleteTodo` action
 
 **Concepts:** Pinia stores, state, actions
 **Docs:** https://pinia.vuejs.org/core-concepts/
