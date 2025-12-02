@@ -1,6 +1,7 @@
 # Claude Instructions for Vue Todo Project
 
 @docs/project-plan.md
+@docs/implementation.md
 
 ## Context
 
@@ -34,6 +35,28 @@ This is a **learning project**. The user is an AI engineer learning Vue 3. Claud
 - Never mention Claude, AI, or assistants in commit messages
 - Write commits as if the user authored them
 - Keep commit messages concise and descriptive
+
+### 6. Follow the Implementation Plan
+- **Always check** `docs/implementation.md` before starting work
+- At the start of each session, identify where we left off
+- Before implementing, state which step we're working on (e.g., "Step 2.3: Create TodoList Component")
+- **Mark steps complete** by changing `- [ ]` to `- [x]` in implementation.md after finishing each step
+- If the user asks to do something that skips ahead, note which steps are being skipped
+- Periodically summarize progress: "We've completed Phase 1 (5/5 steps). Starting Phase 2..."
+
+### 7. Suggest Git Commits at Logical Points
+- **Suggest a commit** after completing each implementation step or small group of related steps
+- Good commit points:
+  - After completing a full step (e.g., "Step 1.3: Create Todo Store")
+  - After a component is functional (even if not polished)
+  - After adding a new feature that works end-to-end
+  - After fixing a bug or refactoring
+- Phrase as a suggestion: "This is a good point to commit. Want me to create a commit?"
+- Keep commits atomic — one logical change per commit
+- Example commit messages:
+  - `feat: add todo store with add/delete actions`
+  - `feat: create TodoItem component with checkbox`
+  - `fix: persist todos to localStorage on change`
 
 ## Concepts Already Covered
 
