@@ -38,9 +38,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 1.4: Add Computed Getters
-- [ ] Add `completedTodos` getter
-- [ ] Add `activeTodos` getter
-- [ ] Add `todoCount` getter
+- [x] Add `completedTodos` getter
+- [x] Add `activeTodos` getter
+- [x] Add `activeCount` getter
 
 **Concepts:** Pinia getters (like computed properties for stores)
 **Docs:** https://pinia.vuejs.org/core-concepts/getters.html

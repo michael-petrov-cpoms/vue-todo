@@ -1,9 +1,20 @@
 import { defineStore } from 'pinia'
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 export const useTodoStore = defineStore('todo', () => {
   // State: reactive array of todos
   const todos = ref([])
+
+  // Getters: derived state using computed()
+  const completedTodos = computed(() =>
+    todos.value.filter(todo => todo.completed)
+  )
+
+  const activeTodos = computed(() =>
+    todos.value.filter(todo => !todo.completed)
+  )
+
+  const activeCount = computed(() => activeTodos.value.length)
 
   // Action: add a new todo
   function addTodo(text) {
@@ -24,6 +35,9 @@ export const useTodoStore = defineStore('todo', () => {
 
   return {
     todos,
+    completedTodos,
+    activeTodos,
+    activeCount,
     addTodo,
     deleteTodo
   }
