@@ -17,9 +17,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 1.2: Apply 98.css Styling
-- [ ] Import 98.css in main.js
-- [ ] Create the Windows 98 window chrome structure in App.vue
-- [ ] Add title bar with window controls
+- [x] Import 98.css in main.js
+- [x] Create the Windows 98 window chrome structure in App.vue
+- [x] Add title bar with window controls
 
 **Concepts:** CSS integration, template structure
 **Docs:** https://jdan.github.io/98.css/
