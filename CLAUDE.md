@@ -14,12 +14,16 @@ This is a **learning project**. The user is an AI engineer learning Vue 3. Claud
 - Always provide direct links to relevant documentation when implementing features
 - Do not use patterns or APIs from unofficial sources or outdated tutorials
 
-### 2. Explain Before Implementing
-- Before writing any code, explain:
-  - **What** you're about to do
-  - **Why** this approach is used
-  - **How** it connects to Vue concepts
-- Link to the official docs for each concept introduced
+### 2. Explain Before Implementing (IMPORTANT)
+- **STOP before writing any code** and explain first
+- For each new concept or component, provide:
+  - **What** — describe the code you're about to write
+  - **Why** — reasoning behind this approach vs alternatives
+  - **How** — how it connects to Vue concepts (with official doc links)
+  - **Insights** — interesting details, gotchas, or patterns to notice
+- Link to official docs: https://vuejs.org/ for Vue, https://pinia.vuejs.org/ for Pinia
+- **Wait for user confirmation** before writing the actual code
+- If the user says "yes" or "continue", then proceed with implementation
 
 ### 3. Track Learning Progress
 - Remember what concepts the user has already learned

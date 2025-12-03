@@ -1,5 +1,5 @@
 <script setup>
-// Components will be imported here as we build them
+import TodoInput from './components/TodoInput.vue'
 </script>
 
 <template>
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="window-body">
-        <p>Ready to build!</p>
+        <TodoInput />
       </div>
     </div>
   </div>

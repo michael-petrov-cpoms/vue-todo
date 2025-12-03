@@ -60,10 +60,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ## Phase 2: Components & Reactivity
 
 ### Step 2.1: Create TodoInput Component
-- [ ] Create `src/components/TodoInput.vue`
-- [ ] Add text input with `ref()` for local state
-- [ ] Use `v-model` for two-way binding
-- [ ] Emit new todo on form submit
+- [x] Create `src/components/TodoInput.vue`
+- [x] Add text input with `ref()` for local state
+- [x] Use `v-model` for two-way binding
+- [x] Call store action on form submit
 
 **Concepts:** `ref()`, `v-model`, component events
 **Docs:** https://vuejs.org/guide/essentials/forms.html
