@@ -48,8 +48,8 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 1.5: Implement localStorage Persistence
-- [ ] Load todos from localStorage on store initialization
-- [ ] Use `$subscribe()` to save todos on every change
+- [x] Load todos from localStorage on store initialization
+- [x] Use `watch()` to save todos on every change
 - [ ] Test persistence by refreshing the browser
 
 **Concepts:** Pinia subscriptions, browser APIs

@@ -1,9 +1,12 @@
 import { defineStore } from 'pinia'
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
+
+const STORAGE_KEY = 'vue-todo-items'
 
 export const useTodoStore = defineStore('todo', () => {
-  // State: reactive array of todos
-  const todos = ref([])
+  // State: load from localStorage or start empty
+  const saved = localStorage.getItem(STORAGE_KEY)
+  const todos = ref(saved ? JSON.parse(saved) : [])
 
   // Getters: derived state using computed()
   const completedTodos = computed(() =>
@@ -32,6 +35,15 @@ export const useTodoStore = defineStore('todo', () => {
       todos.value.splice(index, 1)
     }
   }
+
+  // Persist to localStorage on any change
+  watch(
+    todos,
+    (newTodos) => {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(newTodos))
+    },
+    { deep: true }
+  )
 
   return {
     todos,
