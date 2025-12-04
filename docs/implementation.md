@@ -50,7 +50,7 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ### Step 1.5: Implement localStorage Persistence
 - [x] Load todos from localStorage on store initialization
 - [x] Use `watch()` to save todos on every change
-- [ ] Test persistence by refreshing the browser
+- [x] Test persistence by refreshing the browser
 
 **Concepts:** Pinia subscriptions, browser APIs
 **Docs:** https://pinia.vuejs.org/core-concepts/state.html#subscribing-to-the-state
@@ -113,9 +113,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 2.6: Add Delete Functionality
-- [ ] Add delete button to TodoItem (98.css button)
-- [ ] Emit delete event with todo id
-- [ ] Connect to `deleteTodo` action in store
+- [x] Add delete button to TodoItem (98.css button)
+- [x] Emit delete event with todo id
+- [x] Connect to `deleteTodo` action in store
 
 **Concepts:** Event handling with arguments
 **Docs:** https://vuejs.org/guide/essentials/event-handling.html
