@@ -11,3 +11,8 @@ body {
   /* Classic Windows 98 teal desktop background */
   background: #008080;
 }
+
+/* Scale everything 1.5x - this affects all 98.css fixed pixel values */
+#app {
+  zoom: 1.5;
+}

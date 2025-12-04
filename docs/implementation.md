@@ -93,9 +93,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 2.4: Wire Up Components in App.vue
-- [ ] Import and use TodoInput component
-- [ ] Import and use TodoList component
-- [ ] Test adding todos through the UI
+- [x] Import and use TodoInput component
+- [x] Import and use TodoList component
+- [x] Test adding todos through the UI
 
 **Concepts:** Component composition
 **Docs:** https://vuejs.org/guide/essentials/component-basics.html
