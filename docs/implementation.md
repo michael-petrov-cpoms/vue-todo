@@ -103,9 +103,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 2.5: Add Toggle Complete Functionality
-- [ ] Add `toggleTodo` action to the store
-- [ ] Emit event from TodoItem checkbox
-- [ ] Connect TodoList to handle the toggle
+- [x] Add `toggleTodo` action to the store
+- [x] Emit event from TodoItem checkbox
+- [x] Connect TodoList to handle the toggle
 
 **Concepts:** Event handling, `$emit()`
 **Docs:** https://vuejs.org/guide/components/events.html

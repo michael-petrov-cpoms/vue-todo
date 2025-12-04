@@ -36,6 +36,14 @@ export const useTodoStore = defineStore('todo', () => {
     }
   }
 
+  // Action: toggle a todo's completed status
+  function toggleTodo(id) {
+    const todo = todos.value.find(t => t.id === id)
+    if (todo) {
+      todo.completed = !todo.completed
+    }
+  }
+
   // Persist to localStorage on any change
   watch(
     todos,
@@ -51,6 +59,7 @@ export const useTodoStore = defineStore('todo', () => {
     activeTodos,
     activeCount,
     addTodo,
-    deleteTodo
+    deleteTodo,
+    toggleTodo
   }
 })

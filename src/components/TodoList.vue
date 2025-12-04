@@ -5,11 +5,7 @@ import TodoItem from './TodoItem.vue'
 const todoStore = useTodoStore()
 
 function handleToggle(id) {
-  // We need to add this action to the store — coming in Step 2.5
-  const todo = todoStore.todos.find(t => t.id === id)
-  if (todo) {
-    todo.completed = !todo.completed
-  }
+  todoStore.toggleTodo(id)
 }
 
 function handleDelete(id) {

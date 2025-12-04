@@ -39,7 +39,7 @@ const emit = defineEmits(['toggle', 'delete'])
   flex: 1;
 }
 
-.todo-item label.completed {
+.completed {
   text-decoration: line-through;
   color: gray;
 }
