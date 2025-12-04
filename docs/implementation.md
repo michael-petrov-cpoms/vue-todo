@@ -82,10 +82,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 2.3: Create TodoList Component
-- [ ] Create `src/components/TodoList.vue`
-- [ ] Use `useTosoStore()` to access the Pinia store
-- [ ] Render todos with `v-for`
-- [ ] Add `:key` binding for list rendering
+- [x] Create `src/components/TodoList.vue`
+- [x] Use `useTodoStore()` to access the Pinia store
+- [x] Render todos with `v-for`
+- [x] Add `:key` binding for list rendering
 
 **Concepts:** `v-for`, list rendering, keys
 **Docs:** https://vuejs.org/guide/essentials/list.html
