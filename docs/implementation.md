@@ -71,10 +71,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 2.2: Create TodoItem Component
-- [ ] Create `src/components/TodoItem.vue`
-- [ ] Accept `todo` as a prop with `defineProps()`
-- [ ] Display todo text with checkbox
-- [ ] Style with 98.css checkbox class
+- [x] Create `src/components/TodoItem.vue`
+- [x] Accept `todo` as a prop with `defineProps()`
+- [x] Display todo text with checkbox
+- [x] Emit toggle and delete events
 
 **Concepts:** Props, `defineProps()`
 **Docs:** https://vuejs.org/guide/components/props.html
