@@ -202,10 +202,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 4.2: Test TodoItem Component
-- [ ] Create `src/components/__tests__/TodoItem.spec.js`
-- [ ] Test rendering todo text
-- [ ] Test checkbox toggle emits event
-- [ ] Test delete button emits event
+- [x] Create `src/components/__tests__/TodoItem.spec.js`
+- [x] Test rendering todo text
+- [x] Test checkbox toggle emits event
+- [x] Test delete button emits event
 
 **Concepts:** Component testing with Vue Test Utils
 **Docs:** https://test-utils.vuejs.org/guide/
@@ -213,10 +213,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 4.3: Test TodoInput Component
-- [ ] Create `src/components/__tests__/TodoInput.spec.js`
-- [ ] Test form submission
-- [ ] Test input clearing after submit
-- [ ] Test empty input prevention
+- [x] Create `src/components/__tests__/TodoInput.spec.js`
+- [x] Test form submission
+- [x] Test input clearing after submit
+- [x] Test empty input prevention
 
 **Concepts:** Testing user interactions
 **Docs:** https://test-utils.vuejs.org/guide/essentials/event-handling.html
