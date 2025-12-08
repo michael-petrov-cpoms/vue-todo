@@ -145,10 +145,10 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 3.3: Add Edit Functionality
-- [ ] Add edit mode state to TodoItem (local `ref()`)
-- [ ] Show input field when editing
-- [ ] Save edit with Enter key, cancel with Escape
-- [ ] Add `updateTodo` action to store
+- [x] Add edit mode state to TodoItem (local `ref()`)
+- [x] Show input field when editing
+- [x] Save edit with Enter key, cancel with Escape
+- [x] Add `updateTodo` action to store
 
 **Concepts:** Conditional rendering, keyboard events
 **Docs:** https://vuejs.org/guide/essentials/conditional.html

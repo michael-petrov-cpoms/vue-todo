@@ -59,6 +59,14 @@ export const useTodoStore = defineStore('todo', () => {
     }
   }
 
+  // Action: update a todo's text
+  function updateTodo(id, newText) {
+    const todo = todos.value.find(t => t.id === id)
+    if (todo) {
+      todo.text = newText
+    }
+  }
+
   // Persist to localStorage on any change
   watch(
     todos,
@@ -78,6 +86,7 @@ export const useTodoStore = defineStore('todo', () => {
     addTodo,
     deleteTodo,
     toggleTodo,
+    updateTodo,
     setFilter
   }
 })

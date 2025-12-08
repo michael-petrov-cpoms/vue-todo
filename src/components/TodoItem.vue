@@ -1,12 +1,41 @@
 <script setup>
-defineProps({
+import { ref, nextTick } from 'vue'
+
+const props = defineProps({
   todo: {
     type: Object,
     required: true
   }
 })
 
-const emit = defineEmits(['toggle', 'delete'])
+const emit = defineEmits(['toggle', 'delete', 'update'])
+
+// Local state for edit mode
+const isEditing = ref(false)
+const editText = ref('')
+const editInput = ref(null)
+
+function startEdit() {
+  isEditing.value = true
+  editText.value = props.todo.text
+  // Focus the input after Vue updates the DOM
+  nextTick(() => {
+    editInput.value?.focus()
+  })
+}
+
+function saveEdit() {
+  if (!isEditing.value) return // Already cancelled, don't save
+  const trimmed = editText.value.trim()
+  if (trimmed) {
+    emit('update', props.todo.id, trimmed)
+  }
+  isEditing.value = false
+}
+
+function cancelEdit() {
+  isEditing.value = false
+}
 </script>
 
 <template>
@@ -18,11 +47,22 @@ const emit = defineEmits(['toggle', 'delete'])
       @change="emit('toggle', todo.id)"
     />
     <label
+      v-if="!isEditing"
       :for="`todo-${todo.id}`"
       :class="{ completed: todo.completed }"
     >
       {{ todo.text }}
     </label>
+    <input
+      v-else
+      ref="editInput"
+      v-model="editText"
+      class="edit-input"
+      @keydown.enter="saveEdit"
+      @keydown.escape="cancelEdit"
+      @blur="saveEdit"
+    />
+    <button v-if="!isEditing" @click="startEdit">Edit</button>
     <button @click="emit('delete', todo.id)">Delete</button>
   </li>
 </template>
@@ -36,6 +76,10 @@ const emit = defineEmits(['toggle', 'delete'])
 }
 
 .todo-item label {
+  flex: 1;
+}
+
+.edit-input {
   flex: 1;
 }
 

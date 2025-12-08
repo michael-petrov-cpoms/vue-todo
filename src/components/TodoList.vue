@@ -11,6 +11,10 @@ function handleToggle(id) {
 function handleDelete(id) {
   todoStore.deleteTodo(id)
 }
+
+function handleUpdate(id, newText) {
+  todoStore.updateTodo(id, newText)
+}
 </script>
 
 <template>
@@ -21,6 +25,7 @@ function handleDelete(id) {
       :todo="todo"
       @toggle="handleToggle"
       @delete="handleDelete"
+      @update="handleUpdate"
     />
   </ul>
   <p v-if="todoStore.filteredTodos.length === 0" class="empty-message">
