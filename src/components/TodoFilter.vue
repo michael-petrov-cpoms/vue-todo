@@ -40,6 +40,13 @@ const store = useTodoStore()
       />
       <label for="filter-completed">Completed</label>
     </div>
+    <button
+      v-if="store.completedTodos.length > 0"
+      class="clear-btn"
+      @click="store.clearCompleted"
+    >
+      Clear completed
+    </button>
   </fieldset>
 </template>
 
@@ -51,5 +58,9 @@ const store = useTodoStore()
 .todo-filter .field-row {
   display: inline-flex;
   margin-right: 12px;
+}
+
+.clear-btn {
+  margin-left: 12px;
 }
 </style>

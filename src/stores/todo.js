@@ -67,6 +67,11 @@ export const useTodoStore = defineStore('todo', () => {
     }
   }
 
+  // Action: remove all completed todos
+  function clearCompleted() {
+    todos.value = todos.value.filter(todo => !todo.completed)
+  }
+
   // Persist to localStorage on any change
   watch(
     todos,
@@ -87,6 +92,7 @@ export const useTodoStore = defineStore('todo', () => {
     deleteTodo,
     toggleTodo,
     updateTodo,
+    clearCompleted,
     setFilter
   }
 })

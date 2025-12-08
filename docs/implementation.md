@@ -156,9 +156,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 3.4: Add Clear Completed Button
-- [ ] Add "Clear completed" button to TodoFilter
-- [ ] Add `clearCompleted` action to store
-- [ ] Only show button when completed todos exist
+- [x] Add "Clear completed" button to TodoFilter
+- [x] Add `clearCompleted` action to store
+- [x] Only show button when completed todos exist
 
 **Concepts:** Conditional display with `v-if`
 **Docs:** https://vuejs.org/guide/essentials/conditional.html#v-if
