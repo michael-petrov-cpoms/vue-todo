@@ -19,6 +19,14 @@ export const useTodoStore = defineStore('todo', () => {
 
   const activeCount = computed(() => activeTodos.value.length)
 
+  // UI State: current filter ('all', 'active', 'completed')
+  const filter = ref('all')
+
+  // Action: set the current filter
+  function setFilter(newFilter) {
+    filter.value = newFilter
+  }
+
   // Action: add a new todo
   function addTodo(text) {
     todos.value.push({
@@ -58,8 +66,10 @@ export const useTodoStore = defineStore('todo', () => {
     completedTodos,
     activeTodos,
     activeCount,
+    filter,
     addTodo,
     deleteTodo,
-    toggleTodo
+    toggleTodo,
+    setFilter
   }
 })

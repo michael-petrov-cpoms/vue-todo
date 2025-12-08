@@ -125,9 +125,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ## Phase 3: Filtering & Polish
 
 ### Step 3.1: Create TodoFilter Component
-- [ ] Create `src/components/TodoFilter.vue`
-- [ ] Add filter state to the store (`all`, `active`, `completed`)
-- [ ] Create three 98.css radio buttons
+- [x] Create `src/components/TodoFilter.vue`
+- [x] Add filter state to the store (`all`, `active`, `completed`)
+- [x] Create three 98.css radio buttons
 
 **Concepts:** Reactive state for UI
 **Docs:** https://vuejs.org/guide/essentials/reactivity-fundamentals.html
@@ -238,4 +238,4 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 - [ ] Not started
 - [x] Completed
 
-**Current Phase:** Phase 1 - Foundation & Pinia Store
+**Current Phase:** Phase 3 - Filtering & Polish

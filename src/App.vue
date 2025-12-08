@@ -1,6 +1,7 @@
 <script setup>
 import TodoInput from './components/TodoInput.vue'
 import TodoList from './components/TodoList.vue'
+import TodoFilter from './components/TodoFilter.vue'
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import TodoList from './components/TodoList.vue'
       </div>
       <div class="window-body">
         <TodoInput />
+        <TodoFilter />
         <TodoList />
       </div>
     </div>
