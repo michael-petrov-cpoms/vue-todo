@@ -175,6 +175,18 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 
 ---
 
+### Step 3.6: Easter Eggs
+- [x] Replace Edit/Delete buttons with ✎ and ✕ icons
+- [x] Add window state (normal, maximized, minimized, closed)
+- [x] Maximize: scale window to 2x size
+- [x] Minimize: move window to bottom-left corner
+- [x] Close: show "There's always something to do" message
+
+**Concepts:** Dynamic classes, CSS transforms, reactive UI state
+**Docs:** https://vuejs.org/guide/essentials/class-and-style.html
+
+---
+
 ## Phase 4: Testing
 
 ### Step 4.1: Test Todo Store

@@ -62,8 +62,8 @@ function cancelEdit() {
       @keydown.escape="cancelEdit"
       @blur="saveEdit"
     />
-    <button v-if="!isEditing" @click="startEdit">Edit</button>
-    <button @click="emit('delete', todo.id)">Delete</button>
+    <button v-if="!isEditing" @click="startEdit" aria-label="Edit">✎</button>
+    <button @click="emit('delete', todo.id)" aria-label="Delete">✕</button>
   </li>
 </template>
 
@@ -86,5 +86,10 @@ function cancelEdit() {
 .completed {
   text-decoration: line-through;
   color: gray;
+}
+
+.todo-item button {
+  font-weight: bold;
+  font-size: 14px;
 }
 </style>
