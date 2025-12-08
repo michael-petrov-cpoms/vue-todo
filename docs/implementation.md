@@ -135,9 +135,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 3.2: Implement Filtered List
-- [ ] Add `filteredTodos` getter to store
-- [ ] Use `computed()` based on current filter
-- [ ] Update TodoList to use filtered list
+- [x] Add `filteredTodos` getter to store
+- [x] Use `computed()` based on current filter
+- [x] Update TodoList to use filtered list
 
 **Concepts:** `computed()` for derived state
 **Docs:** https://vuejs.org/guide/essentials/computed.html

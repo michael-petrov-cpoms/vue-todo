@@ -16,14 +16,14 @@ function handleDelete(id) {
 <template>
   <ul class="todo-list">
     <TodoItem
-      v-for="todo in todoStore.todos"
+      v-for="todo in todoStore.filteredTodos"
       :key="todo.id"
       :todo="todo"
       @toggle="handleToggle"
       @delete="handleDelete"
     />
   </ul>
-  <p v-if="todoStore.todos.length === 0" class="empty-message">
+  <p v-if="todoStore.filteredTodos.length === 0" class="empty-message">
     No todos yet. Add one above!
   </p>
 </template>

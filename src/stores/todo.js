@@ -19,6 +19,13 @@ export const useTodoStore = defineStore('todo', () => {
 
   const activeCount = computed(() => activeTodos.value.length)
 
+  // Getter: todos filtered by current filter selection
+  const filteredTodos = computed(() => {
+    if (filter.value === 'active') return activeTodos.value
+    if (filter.value === 'completed') return completedTodos.value
+    return todos.value
+  })
+
   // UI State: current filter ('all', 'active', 'completed')
   const filter = ref('all')
 
@@ -66,6 +73,7 @@ export const useTodoStore = defineStore('todo', () => {
     completedTodos,
     activeTodos,
     activeCount,
+    filteredTodos,
     filter,
     addTodo,
     deleteTodo,
