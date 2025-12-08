@@ -3,6 +3,9 @@ import { ref, computed, watch } from 'vue'
 
 const STORAGE_KEY = 'vue-todo-items'
 
+// Counter ensures unique IDs even when Date.now() returns same value
+let idCounter = 0
+
 export const useTodoStore = defineStore('todo', () => {
   // State: load from localStorage or start empty
   const saved = localStorage.getItem(STORAGE_KEY)
@@ -37,7 +40,7 @@ export const useTodoStore = defineStore('todo', () => {
   // Action: add a new todo
   function addTodo(text) {
     todos.value.push({
-      id: Date.now(),
+      id: Date.now() + idCounter++,
       text,
       completed: false
     })

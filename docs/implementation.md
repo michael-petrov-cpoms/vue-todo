@@ -190,11 +190,11 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ## Phase 4: Testing
 
 ### Step 4.1: Test Todo Store
-- [ ] Create `src/stores/__tests__/todo.spec.js`
-- [ ] Test `addTodo` action
-- [ ] Test `deleteTodo` action
-- [ ] Test `toggleTodo` action
-- [ ] Test computed getters
+- [x] Create `src/stores/__tests__/todo.spec.js`
+- [x] Test `addTodo` action
+- [x] Test `deleteTodo` action
+- [x] Test `toggleTodo` action
+- [x] Test computed getters
 
 **Concepts:** Unit testing with Vitest
 **Docs:** https://pinia.vuejs.org/cookbook/testing.html
