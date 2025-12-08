@@ -166,9 +166,9 @@ A learning-focused guide to building the Todo app. Each step introduces a Vue co
 ---
 
 ### Step 3.5: Polish the UI
-- [ ] Add todo count display ("3 items left")
-- [ ] Add empty state message when no todos
-- [ ] Fine-tune spacing and alignment
+- [x] Add todo count display ("3 items left")
+- [x] Add empty state message when no todos
+- [x] Fine-tune spacing and alignment
 
 **Concepts:** Template expressions, conditional rendering
 **Docs:** https://vuejs.org/guide/essentials/template-syntax.html

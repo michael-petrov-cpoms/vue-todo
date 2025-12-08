@@ -28,8 +28,11 @@ function handleUpdate(id, newText) {
       @update="handleUpdate"
     />
   </ul>
-  <p v-if="todoStore.filteredTodos.length === 0" class="empty-message">
+  <p v-if="todoStore.todos.length === 0" class="empty-message">
     No todos yet. Add one above!
+  </p>
+  <p v-else-if="todoStore.filteredTodos.length === 0" class="empty-message">
+    No {{ todoStore.filter }} todos.
   </p>
 </template>
 

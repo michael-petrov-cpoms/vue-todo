@@ -6,7 +6,7 @@ const store = useTodoStore()
 
 <template>
   <fieldset class="todo-filter">
-    <legend>Show:</legend>
+    <legend>{{ store.activeCount }} item{{ store.activeCount === 1 ? '' : 's' }} left</legend>
     <div class="field-row">
       <input
         id="filter-all"
