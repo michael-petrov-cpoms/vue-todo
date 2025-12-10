@@ -33,7 +33,7 @@ function handleClose() {
       </div>
       <div class="window-body">
         <div v-if="windowState === 'closed'" class="closed-message">
-          There's always something to do
+          There's always something to do 😉
           <button @click="handleClose">Reopen</button>
         </div>
         <template v-else>
@@ -86,8 +86,7 @@ function handleClose() {
 .closed-message {
   text-align: center;
   padding: 2rem;
-  font-style: italic;
-  color: gray;
+  color: #222;
   display: flex;
   flex-direction: column;
   gap: 12px;
